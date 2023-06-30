@@ -15,8 +15,8 @@
     </nav>
 
     <section id="About">
-        <h1>Hi</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit ea voluptas saepe quasi nemo quidem animi nobis. Dolorem nulla tenetur iusto nobis corrupti quaerat mollitia dolorum ipsam. Maxime, possimus.</p>
+        <h1>About</h1>
+        <p>Hello! My name is Olivia Fratangelo. Welcome to my website where I share information about some of my favorite books. I will provide the authors, titles, corresponding TV Show/Movie adaptations, and songs from the adaptation soundtracks. If you would like to recommend a book you enjoyed, please visit the "submit a recommendation" page and fill out the form! I will review all submissions to post on my website.</p>
     </section>
     <section id="Authors">
         <h1>Hey</h1>
@@ -29,7 +29,30 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae nulla ipsam mollitia soluta in porro amet, obcaecati voluptate facere.</p>
     </section>
     <section id="Recommendations">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci animi est veniam nulla. Ipsum, odit velit assumenda dolor exercitationem recusandae ducimus quasi praesentium, dolorum nesciunt eius tenetur voluptatibus ad minima.</p>
+        <h1>Submit A Recommendation</h1>
+        <form action="/recommendation" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email:</label>
+            <input type="text" id="email" name="email" required><br>
+
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" name="title" required><br>
+        
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br>
+
+            <label for="adaptation">Is there a TV/Movie adaptation?</label>
+            <select>
+                <option value="option1">Yes</option>
+                <option value="option2">No</option>
+                <option value="option3">Not Sure</option>
+              </select><br>
+            
+        
+            <input type="submit" value="Submit">
+        </form>
     </section>
 
     <footer>

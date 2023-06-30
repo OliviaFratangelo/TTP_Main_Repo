@@ -1,7 +1,15 @@
+* {
+  color: #5e5e5e;
+  font-family: serif;
+}
+
+body {
+  background-color: #EAE1D0;
+}
+
 nav {
     background-color: #475E67;
     overflow: hidden;
-    font-family: serif;
     font-weight: 700;
   }
   
@@ -45,6 +53,9 @@ footer {
 }
 
 #Recommendations {
+  text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  line-height: 2.5rem;
+  font-size: 1rem;
 }
