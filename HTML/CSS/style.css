@@ -1,3 +1,4 @@
+
 body {
     font-size: 34px;
     color: red;
@@ -9,4 +10,401 @@ p {
 
 h1, h2, h3 {
     color: green;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 40px;
+}
+
+.movies {
+    color: aqua;
+}
+
+.shows-title {
+    color: pink;
+}
+
+#recipe-title {
+    text-transform: uppercase;
+}
+
+#desserts {
+    text-align: center;
+}
+
+* {
+    text-align: center;
+    font-family: monospace;
+}
+
+li {
+    color:bisque;
+}
+
+.languages {
+    text-transform: uppercase;
+}
+
+body {
+    font-size: 24px;
+    font-family: monospace;
+    line-height: 1.5;
+    background-color: papayawhip;
+    /* rgb - red green blue */
+    color: rgb(0,0,0);
+}
+
+p {
+    /* rgba - red green blue alpha --> alpha = transperancy (1 highest, 0 lowest)*/
+    color: rgba(0,0,0,.5);
+    text-align: center;
+}
+
+h2 {
+    /* Hex values are actually just a different way to represent RGB values. Instead of using three numbers between 0 and 255, you use six hexadecimal numbers. Hex numbers can be 0-9 and A-F. */
+    color: #35358c;
+}
+
+/* Go to (on Chrome browser) --- Settings --> Appearance --> Font Size */
+h1 {
+    font-size: 32px;
+}
+
+/* h1 {
+    font-size: 2rem;
+} */
+
+/* Universal selector that selects all elements on the page*/
+* {
+    /* These properties below make you start with a clean slate and have more control over the styles applied to your elements.  */
+
+    /* sets the margin of all elements to 0, removing any default margin applied by the browser. */
+    margin: 0;
+
+    /* It sets the padding of all elements to 0, removing any default padding applied by the browser. */
+    padding: 0;
+
+    /* This property changes the box model behavior to border-box, which means that the width and height of an element include the content, padding, and border, but exclude the margin. This ensures consistent sizing and spacing of elements across different browsers. */
+    box-sizing: border-box;
+}
+/*  */
+
+.container {
+    border: 2px dotted red;
+    border-right: 2px dotted blue;
+    border-bottom: 2px dotted green;
+
+    font-size: 1.5rem;
+
+    margin: 1.5em;
+
+    padding: 1.5em;
+
+    outline: 5px solid purple;
+
+    outline-offset: 5px; 
+}
+
+body {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+main {
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 1.5;
+    letter-spacing: .1em;
+    word-spacing: .5em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+body {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(99, 99, 215);
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color:darkolivegreen;
+}
+
+a:active {
+    color: aquamarine;
+}
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+ol {
+    list-style-type: upper-roman;
+    /* list-style-type: lower-greek; */
+}
+
+/* no style for ol */
+/* ol {
+    list-style-type: none;
+    padding: 0;
+} */
+
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: red;
+    line-height: 1.5;
+    /* image for bullet points */
+    list-style-image: url("");
+}
+
+/* select all li elements in ul */
+ul li {
+    color: green;
+}
+
+/* select a specific li of the ul element using pseudo class */
+ul li:nth-child(2) {
+    color: red;
+}
+
+/* pseudo class to only select bullet points */
+ul ::marker {
+    color: purple;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "$4 ";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: black;
+    margin: 0;
+
+}
+
+li {
+    display: inline-block;
+    margin-inline: .5rem;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: fantasy;
+}
+
+.block {
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.right {
+    float: right;
+    margin-left: 1rem;
+}
+
+section {
+    background-color: bisque;
+    border: 2px solid red;
+    padding: 1rem;
+    
+     /* flow-root is used to clear floats and contain any child elements that are floated or have positioned elements inside the section. It helps prevent collapsing of margins and keeps the content within the section contained. */
+    display: flow-root;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: fantasy;
+}
+
+.columns {
+    column-count: 4;
+    column-width: 250px;
+    column-rule: 2px solid black;
+    column-gap: 3rem;
+}
+
+/* make all columns top start at the same spot */
+.columns p {
+    margin-top: 0;
+}
+
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+
+    /* column-span: it allows the element's content to span across all columns instead of being confined to a single column. */
+    column-span: all;
+}
+
+.nowrap {
+    /* white-space: nowrap - will ensure that the text within the span element stays on a single line, regardless of the container's width. */
+    white-space: nowrap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: monospace;
+    height: 200vw;
+}
+
+.outer-container {
+    border: 3px solid red;
+    width: 900px;
+    height: 500px;
+
+    /* top and bottom 4px */
+    /* left and right margins to auto means that the browser will automatically calculate and distribute the remaining horizontal space equally on both sides of the element.  */
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container {
+    border: 3px solid blue;
+    width: 700px;
+    height: 200px;
+    margin: 100px auto;
+    /* position: relative; */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 1rem;
+    /* position: relative; */
+}
+
+/* position: absolute is positioned relative to its nearest positioned ancestor, if any; otherwise, it is positioned relative to the initial containing block (usually the <html> element). */
+.absolute {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* position: relative is positioned relative to its normal position in the document flow. */
+.relative {
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: 100px
+}
+
+/* position: fixed is positioned relative to the viewport (the browser window). It stays fixed in the same position even when the page is scrolled. */
+.fixed {
+    background-color: blueviolet;
+    position: fixed;
+    top: 100px;
+}
+
+/* make sure to uncomment other div (absolute relative and fixed) to see how sticky works */
+/* position: sticky property is used to create elements that "stick" to a specific position on the page when scrolling */
+.sticky {
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 1000px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    height: 100px;
+    font-size: 5rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: black;
+    position: sticky;
+    bottom: 0;
 }

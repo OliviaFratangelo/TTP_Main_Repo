@@ -1,0 +1,28 @@
+nav {
+    background-color: #475E67;
+    overflow: hidden;
+    font-family: serif;
+    font-weight: 700;
+  }
+  
+  /* Style the links inside the navigation bar */
+  nav a {
+    float: left;
+    color: #dbd3d8;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Change the color of links on hover */
+  nav a:hover {
+    background-color: #A4B4BE;
+    color: #919191;
+  }
+
+footer {
+    text-align: center;
+    font-size: .9rem;
+    font-family: sans-serif;
+  }
