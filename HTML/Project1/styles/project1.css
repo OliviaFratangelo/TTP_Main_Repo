@@ -36,7 +36,7 @@ footer {
   }
 
 #About {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h1 {
   font-size: 3rem;
 }
 
-.container {
+#About .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,24 +66,49 @@ img {
 
 
 #Authors {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+#Authors .item {
+  margin: 2%;
+  padding: 2%;
+  background: #E0EDEE;
+  color: #475E67;
+  font-size: 100%;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#Authors .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: container;
+}
+  
+#Authors .container {
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: row;
 }
 
 #Books {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 #Adaptations {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 #Recommendations {
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   line-height: 2.5rem;
   font-size: 1rem;
 }
